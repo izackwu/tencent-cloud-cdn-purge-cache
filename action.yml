@@ -1,0 +1,9 @@
+name: "Tencent Cloud CDN Purge Cache"
+description: "Purge cache for Tencent Cloud CDN via its Python SDK API"
+author: keithnull
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  color: green
+  icon: zap
