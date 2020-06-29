@@ -4,7 +4,7 @@ This action purges cache for Tencent Cloud CDN via its Python SDK API.
 
 ## Environment Variables
 
-To use this Github action, you need to set the following environment variable in your workflow:
+To use this Github action, you need to set the following environment variables in your workflow:
 
 | Name | Description | Required |
 | --- | --- | --- |
@@ -17,9 +17,9 @@ To use this Github action, you need to set the following environment variable in
 
 ```yaml
 uses: keithnull/tencent-cloud-cdn-purge-cache@v1.0
-id: example
 env:
   SECRET_ID: ${{ secrets.SECRET_ID}}
   SECRET_KEY: ${{ secrets.SECRET_KEY }}
   PATHS: "https://example.com/foo/,https://example.com/bar/"
+  FLUSH_TYPE: "flush" # optional
 ```
